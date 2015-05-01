@@ -1,0 +1,58 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/data_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Data to encrypt"
+            android:inputType="textPersonName"
+            android:text="Some text to encode" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/decrypted_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/encrypted_field"
+            android:layout_below="@+id/encrypted_field"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/encrypted_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/data_field"
+            android:layout_below="@+id/data_field"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/e_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/decrypted_field"
+            android:layout_below="@+id/decrypted_field"
+            android:layout_marginTop="55dp"
+            android:text="Encrypt" />
+
+        <Button
+            android:id="@+id/d_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/decrypted_field"
+            android:layout_below="@+id/decrypted_field"
+            android:layout_marginTop="55dp"
+            android:text="Decrypt" />
+    </RelativeLayout>
+
+</ScrollView>
